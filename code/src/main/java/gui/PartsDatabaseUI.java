@@ -5,14 +5,8 @@
  */
 package gui;
 
-import io.exporting.IExporter;
-import io.exporting.JSONExporter;
-import io.exporting.JavaExporter;
-import io.exporting.XMLExporter;
-import io.importing.IImporter;
-import io.importing.JSONImporter;
-import io.importing.JavaImporter;
-import io.importing.XMLImporter;
+import io.exporting.*;
+import io.importing.*;
 import javafx.application.Application;
 
 import javafx.geometry.Insets;
@@ -35,8 +29,8 @@ import java.net.MalformedURLException;
  */
 public class PartsDatabaseUI extends Application
 {
-    private static final int SCENE_WIDTH = 500;
-    private static final int SCENE_HEIGHT = 220;
+    private static final int SCENE_WIDTH = 750;
+    private static final int SCENE_HEIGHT = 250;
 
     //model classes
     private PartsDatabase data;
@@ -151,11 +145,11 @@ public class PartsDatabaseUI extends Application
 
         //adds a new part record
         add.setOnAction(event -> {
-            String[] categoriesArray = categories.getText().split(", ");
+            String categoriesString = categories.getText();
             Double listPriceValue = Double.parseDouble(listPrice.getText());
             CarPart part = new CarPart();
-            part.setId(partId.getText());
-            part.setCategories(categoriesArray);
+            part.setId(Integer.parseInt(partId.getText()));
+            part.setCategories(categoriesString);
             part.setListPrice(listPriceValue);
             part.setManufacturer(manufacturer.getText());
             data.addPart(part);
@@ -211,11 +205,13 @@ public class PartsDatabaseUI extends Application
                 case "XML":
                     exporter = new XMLExporter();
                     break;
+                case "Hibernate":
+                    exporter = new HibernateExporter();
             }
             exporter.exportParts(data);
         });
 
-        String[] options = {"Java", "JSON", "XML"};
+        String[] options = {"Java", "JSON", "XML", "Hibernate"};
         exportToggle = new ToggleGroup();
         HBox exportRButtons = getRadioButtons(exportToggle, options);
 
@@ -229,8 +225,8 @@ public class PartsDatabaseUI extends Application
 
         //imports all CarPart objects into the application
         importButton.setOnAction(event -> {
-            String exportOption = exportToggle.getSelectedToggle().getUserData().toString();
-            switch(exportOption){
+            String importOption = importToggle.getSelectedToggle().getUserData().toString();
+            switch(importOption){
                 case "Java":
                     importer = new JavaImporter();
                     break;
@@ -240,6 +236,8 @@ public class PartsDatabaseUI extends Application
                 case "XML":
                     importer = new XMLImporter();
                     break;
+                case "Hibernate":
+                    importer = new HibernateImporter();
             }
             importer.importParts(data);
         });

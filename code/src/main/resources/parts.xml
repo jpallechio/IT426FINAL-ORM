@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <partsDatabase>
     <parts>
-        <categories>yo</categories>
-        <id>123</id>
-        <listPrice>23.33</listPrice>
-        <manufacturer>something</manufacturer>
+        <categories>stuff and things</categories>
+        <id>2343</id>
+        <listPrice>22.3</listPrice>
+        <manufacturer>James</manufacturer>
     </parts>
     <parts>
-        <categories>yo</categories>
-        <id>123</id>
-        <listPrice>23.33</listPrice>
-        <manufacturer>something</manufacturer>
+        <categories>stuff and things</categories>
+        <id>2343</id>
+        <listPrice>22.3</listPrice>
+        <manufacturer>James</manufacturer>
     </parts>
     <parts>
-        <categories>yo</categories>
-        <id>123</id>
-        <listPrice>23.33</listPrice>
-        <manufacturer>something</manufacturer>
-    </parts>
-    <parts>
-        <categories>yo</categories>
-        <id>123</id>
-        <listPrice>23.33</listPrice>
-        <manufacturer>something</manufacturer>
+        <categories>stuff and things</categories>
+        <id>2343</id>
+        <listPrice>22.3</listPrice>
+        <manufacturer>James</manufacturer>
     </parts>
 </partsDatabase>

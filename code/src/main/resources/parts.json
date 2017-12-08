@@ -1,34 +1,20 @@
 [
   {
-    "id": "123",
-    "manufacturer": "something",
-    "listPrice": 23.33,
-    "categories": [
-      "yo"
-    ]
+    "id": 23432,
+    "manufacturer": "Aaron",
+    "listPrice": 45.3,
+    "categories": "stuff and other stuff"
   },
   {
-    "id": "123",
-    "manufacturer": "something",
-    "listPrice": 23.33,
-    "categories": [
-      "yo"
-    ]
+    "id": 498720,
+    "manufacturer": "Joseph",
+    "listPrice": 24.89,
+    "categories": "stuf what is up"
   },
   {
-    "id": "123",
-    "manufacturer": "something",
-    "listPrice": 23.33,
-    "categories": [
-      "yo"
-    ]
-  },
-  {
-    "id": "123",
-    "manufacturer": "something",
-    "listPrice": 23.33,
-    "categories": [
-      "yo"
-    ]
+    "id": 4982720,
+    "manufacturer": "Joseph",
+    "listPrice": 24.89,
+    "categories": "stuf what is up"
   }
 ]
