@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partsDatabase>
+    <parts>
+        <categories>yo</categories>
+        <id>123</id>
+        <listPrice>23.33</listPrice>
+        <manufacturer>something</manufacturer>
+    </parts>
+    <parts>
+        <categories>yo</categories>
+        <id>123</id>
+        <listPrice>23.33</listPrice>
+        <manufacturer>something</manufacturer>
+    </parts>
+    <parts>
+        <categories>yo</categories>
+        <id>123</id>
+        <listPrice>23.33</listPrice>
+        <manufacturer>something</manufacturer>
+    </parts>
+    <parts>
+        <categories>yo</categories>
+        <id>123</id>
+        <listPrice>23.33</listPrice>
+        <manufacturer>something</manufacturer>
+    </parts>
+</partsDatabase>
