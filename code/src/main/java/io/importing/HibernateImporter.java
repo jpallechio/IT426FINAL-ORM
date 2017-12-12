@@ -15,8 +15,8 @@ public class HibernateImporter implements IImporter {
         Session session = SessionThing.getSession();
         session.beginTransaction();
 
-        Collection<CarPart> parts = session.createQuery("from CarPart")
-                .list();
+        Collection<CarPart> parts = session.createQuery
+                ("from CarPart").list();
         //commit changes
         session.getTransaction().commit();
         session.close();
